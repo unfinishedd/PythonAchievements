@@ -6,47 +6,48 @@ length= "6ft8"
 print("Length: " + length)
 
 weight= 180
-print("Weight: " + weight)
+print("Weight: " + str(weight))
 
 position= "Point Guard"
-print("Position: " + position)
+print("Position: " + str(position))
+
 
 jumpshot= 8
-print("Jumpshot: " + jumpshot)
+print("Jumpshot: " + str(jumpshot))
 
 strength= 7
-print("Strength: " + strength)
+print("Strength: " + str(strength))
 
 defense= 7
-print("Defense: " + defense)
+print("Defense: " + str(defense))
 
 passing= 9
-print("Passing: " + passing)
+print("Passing: " + str(passing))
 
 intangibles= 8
-print("Intangibles: " + intangibles)
+print("Intangibles: " + str(intangibles))
 
 size= 9
-print("Size: " + size)
+print("Size: " + str(size))
 
-nba ready= 7
-print("NBA Ready: " + nba ready)
+nbaReady= 7
+print("NBA Ready: " + str(nbaReady))
 
-ball handling= 9
-print("Ball Handling: " + ball handling)
+ballHandling= 9
+print("Ball Handling: " + str(ballHandling))
 
 quickness= 8
-print("Quickness: " + quickness)
+print("Quickness: " + str(quickness))
 
 athleticism= 7
-print("Athleticism: " + athleticism)
+print("Athleticism: " + str(athleticism))
 
 leadership= 8
-print("Leadership: " + leadership)
+print("Leadership: " + str(leadership))
 
 potential= 9
-print("Potential: " + potential)
+print("Potential: " + str(potential))
 
 
 overall= 96
-print("Overall: " + overall)
+print("Overall: " + str(overall))
