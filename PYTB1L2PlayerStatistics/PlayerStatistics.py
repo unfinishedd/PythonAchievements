@@ -1,53 +1,53 @@
 
-name = "LaMelo Ball"
+name = str ("LaMelo Ball")
 print("Name: " + name)
 
 length= "6ft8"
 print("Length: " + length)
 
-weight= 180
+weight= int (180)
 print("Weight: " + str(weight))
 
-position= "Point Guard"
+position= str ("Point Guard")
 print("Position: " + str(position))
 
 
-jumpshot= 8
+jumpshot= float (8.5)
 print("Jumpshot: " + str(jumpshot))
 
-strength= 7
+strength= float (7.5)
 print("Strength: " + str(strength))
 
-defense= 7
+defense= int (7)
 print("Defense: " + str(defense))
 
-passing= 9
+passing= float (9.5)
 print("Passing: " + str(passing))
 
-intangibles= 8
+intangibles= int (8)
 print("Intangibles: " + str(intangibles))
 
-size= 9
+size= int (9)
 print("Size: " + str(size))
 
-nbaReady= 7
+nbaReady= int (7)
 print("NBA Ready: " + str(nbaReady))
 
-ballHandling= 9
+ballHandling= int (9)
 print("Ball Handling: " + str(ballHandling))
 
-quickness= 8
+quickness= float (8.5)
 print("Quickness: " + str(quickness))
 
-athleticism= 7
+athleticism= int (7)
 print("Athleticism: " + str(athleticism))
 
-leadership= 8
+leadership= int (8)
 print("Leadership: " + str(leadership))
 
-potential= 9
+potential= float (9.5)
 print("Potential: " + str(potential))
 
 
-overall= 96
+overall= int (96)
 print("Overall: " + str(overall))
