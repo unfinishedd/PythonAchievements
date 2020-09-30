@@ -34,15 +34,36 @@ getalE -= 77
 print(getalE)
 
 
-getalF = 
+getalF = 7
 
-getalF = 
+getalF %= 2
 
 print(getalF)
 
 
-getal = 
+getalG = 10
 
-getal = 
+getalG += 5
 
-print(getal)
+print(getalG)
+
+
+getalH = 10
+
+getalH /= 2
+
+print(getalH)
+
+
+getalI = 10
+
+getalI -= 5
+
+print(getalI)
+
+
+getalJ = 6
+
+getalJ *= 23
+
+print(getalJ)
