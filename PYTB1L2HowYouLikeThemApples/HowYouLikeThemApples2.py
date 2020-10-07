@@ -1,24 +1,22 @@
 import math
 
-#Vervang de 0-en met de juiste berekeningen
+trees               = 333                           #hoeveel bomen zijn er in totaal?
+shadedTrees         = math.ceil(trees/3*2)          #hoeveel bomen staan er in de schaduw (afgerond naar boven)?
+sunnyTrees          = trees / 3                       #hoeveel in de zon?
+ 
+shadeOutputModifier = 80                            #hoeveel procent productie geeft een schaduwboom?
 
-trees               = 333             #hoeveel bomen zijn er in totaal?
-shadedTrees         = math.ceil(222)  #hoeveel bomen staan er in de schaduw (afgerond naar boven)?
-sunnyTrees          = 111             #hoeveel in de zon?
+sunnyTreeOutput     = 146                           #hoeveel appels geeft 1 zonnige boom?
+shadedTreeOutput    = 116                           #hoeveel appels geeft 1 schaduw boom?
 
-shadeOutputModifier = 80             #hoeveel procent productie geeft een schaduwboom?
+sunnyOutput         = sunnyTreeOutput * sunnyTrees    #hoeveel appels geven alle zonnige bomen? 
+shadedOutput        = shadedTrees * shadedTreeOutput  #hoeveel appels geven alle schaduw bomen?
+totalOutput         = shadedOutput + sunnyOutput      #hoeveel appels zijn er in totaal?
 
-sunnyTreeOutput     = 146             #hoeveel appels geeft 1 zonnige boom?
-shadedTreeOutput    = 116           #hoeveel appels geeft 1 schaduw boom?
+owners              = 4                             #met hoeveel mensen verdelen we de appels?
 
-sunnyOutput         = 16.206             #hoeveel appels geven alle zonnige bomen? 
-shadedOutput        = 25.752             #hoeveel appels geven alle schaduw bomen?
-totalOutput         = 41.958             #hoeveel appels zijn er in totaal?
-
-owners              = 4             #met hoeveel mensen verdelen we de appels?
-
-eatCount            = 4             #hoeveel appels houden we over omdat ze niet eerlijk te verdelen zijn?
-sellableOutput      = 41.954             #hoeveel appels zijn er over en dus verkoopbaar?
-cut                 = 10.489             #hoeveel appels mag ik verkopen?
+eatCount            = totalOutput % 4                #hoeveel appels houden we over omdat ze niet eerlijk te verdelen zijn?
+sellableOutput      = totalOutput - eatCount          #hoeveel appels zijn er over en dus verkoopbaar?
+cut                 = sellableOutput / owners              #hoeveel appels mag ik verkopen?
 
 print(cut)
