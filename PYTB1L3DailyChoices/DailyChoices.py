@@ -1,7 +1,7 @@
 print("Your alarm rings, do you GETUP or SNOOZE ?")
 choice = input()
 if choice == 'GETUP':
-    print("You get out of bed and just do your thing!")
+    print("You get out of bed and proceed to go back into bed ")
 elif choice == 'SNOOZE':
     print("Hmmmmmm zzzzzzzzzzzzzzzzzzzzzzzzzz")
 else:
