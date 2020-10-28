@@ -21,7 +21,7 @@ def printlist():
     
 def nextprint():
     time.sleep(2.1)
-    os.system('clear')
+    os.system('cls')
 
 printlist()
 factory_to_distribution()
